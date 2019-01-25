@@ -1,0 +1,191 @@
+/* Les valeurs en pixel sont précises pour s'approcher le plus possible du template .PNG, cependant cela rend le calcul intuitif
+des marges difficiles */
+
+/* ----------- effet FADE -------------------- */
+.fadein {
+  animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  /* Firefox */
+  -webkit-animation: fadein 3s;
+  /* Safari and Chrome */
+  -o-animation: fadein 3s;
+  /* Opera */
+}
+
+/* @keyframes permet de gérer les phases d'animation */
+@keyframes fadein {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* --------------- effet FADE fin ----------------*/
+
+.body { /* propriétés de l'ensemble de la page */
+	max-width: 1043px;
+	padding-left: 206px;
+	margin: 0;
+}
+
+/* header */
+.header {
+	display: flex;
+	background-color: #2F4858;
+	height: 182px;
+}
+
+	/* user_picture */
+.user_picture {
+	width: 113px;
+}
+
+#user_picture {
+	padding-top: 20px;
+	padding-left: 41px;
+}
+	/* user_picture FIN */
+
+	/* user_title */
+.user_title {
+	margin: auto;
+	padding-right: 38px; 
+	color: #FFF;
+	line-height: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#name {
+	font-size: 22px;
+	margin-top: 16px;
+	letter-spacing: 0.1px;
+}
+
+#job {
+	font-size: 35px;
+}
+
+#title_profile {
+	font-weight: normal;
+	font-style: italic;
+	font-size: 20px;
+	margin-bottom: 25px;
+}	/* user_title FIN */
+/* header FIN */
+
+/* main_box */
+.main_box {
+	display: flex;
+	justify-content: space-between;
+}
+
+	/* user_info_box */
+.user_info_box {
+	background-color: #86BBD8;
+	border-top: solid 4px #9FE694;
+}
+
+.user_info {
+	padding-left: 12px;
+	padding-right: 37px;
+}
+
+.user_info_title {
+	color: #3A5768;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.user_info_title {
+	margin-top: 12px;
+	margin-bottom: 10px;
+}
+
+.user_info_list {
+	list-style: none;
+	font-size: 20px;
+	line-height: 30px;
+	padding-left: 45px;
+	margin-top: 10px;
+	letter-spacing: -0.7px;
+}
+	/* user_info_box FIN */
+
+
+	/* exp */
+.exp {
+	width: 768px;
+	background-color: #FAF8F8;
+}
+
+#experiences {
+	font-weight: bold;
+	font-size: 35px;
+	text-align: center;
+	padding-left: 9px;
+	margin-top: 31px;
+	margin-bottom: 30px;
+}
+
+.user_exp {
+	padding-left: 24px;
+}
+
+.user_exp_title {
+	font-size: 28px;
+	font-weight: bold;
+	margin-top: 25px;
+	margin-bottom: 0px;
+	border-bottom: solid #9FE694 4px;
+	width: 50%;
+}
+
+.user_exp_info {
+	font-style: italic;
+	font-size: 20px;
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
+.user_exp_description {
+	font-size: 19px;
+	margin-top: 11px;
+	margin-bottom: 45px;
+}
+	/* exp FIN */
+
+/* main_box FIN */
+
