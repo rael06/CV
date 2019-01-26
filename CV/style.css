@@ -53,34 +53,38 @@ des marges difficiles */
 }
 
 /* --------------- effet FADE fin ----------------*/
+body {
+	margin:0 ;
+}
 
-.body { /* propriétés de l'ensemble de la page */
+#main_wrapper { /* propriétés de l'ensemble de la page */
 	max-width: 1043px;
 	padding-left: 206px;
 	margin: 0;
 }
 
-/* header */
+/* Header */
 .header {
 	display: flex;
 	background-color: #2F4858;
 	height: 182px;
 }
 
-	/* user_picture */
-.user_picture {
-	width: 113px;
-}
+/* User picture */
 
-#user_picture {
+.user_picture {
 	padding-top: 20px;
 	padding-left: 41px;
 }
-	/* user_picture FIN */
 
-	/* user_title */
+.user_picture > img {
+	width: 113px;
+}
+/* /User picture */
+
+/* User infos */
 .user_title {
-	margin: auto;
+	margin: 0 auto;
 	padding-right: 38px; 
 	color: #FFF;
 	line-height: 20px;
@@ -88,32 +92,35 @@ des marges difficiles */
 	font-weight: bold;
 }
 
-#name {
+.name {
 	font-size: 22px;
-	margin-top: 16px;
+	margin-bottom: 35px;
 	letter-spacing: 0.1px;
 }
 
-#job {
+.job {
 	font-size: 35px;
+	margin-bottom: 35px;
 }
 
-#title_profile {
+.title_profile {
 	font-weight: normal;
 	font-style: italic;
 	font-size: 20px;
 	margin-bottom: 25px;
-}	/* user_title FIN */
-/* header FIN */
+}	
+/* /User infos */
 
-/* main_box */
+/* /Header */
+
+/* Main content */
 .main_box {
 	display: flex;
 	justify-content: space-between;
 }
 
-	/* user_info_box */
-.user_info_box {
+/* User infos, left content */
+.user_info-box {
 	background-color: #86BBD8;
 	border-top: solid 4px #9FE694;
 }
@@ -123,35 +130,35 @@ des marges difficiles */
 	padding-right: 37px;
 }
 
-.user_info_title {
+.user_info-title {
 	color: #3A5768;
 	font-weight: bold;
 	font-size: 20px;
 }
 
-.user_info_title {
+.user_info-title {
 	margin-top: 12px;
 	margin-bottom: 10px;
 }
 
-.user_info_list {
+.user_info-list {
 	list-style: none;
 	font-size: 20px;
-	line-height: 30px;
+	line-height: 29px;
 	padding-left: 45px;
 	margin-top: 10px;
 	letter-spacing: -0.7px;
+	margin-bottom: 24px;
 }
-	/* user_info_box FIN */
+/* /User infos, left content */
 
-
-	/* exp */
-.exp {
+/* User experiences, right content */
+.user_experiences {
 	width: 768px;
 	background-color: #FAF8F8;
 }
 
-#experiences {
+.title_1 {
 	font-weight: bold;
 	font-size: 35px;
 	text-align: center;
@@ -162,9 +169,10 @@ des marges difficiles */
 
 .user_exp {
 	padding-left: 24px;
+	letter-spacing: -0.1px;
 }
 
-.user_exp_title {
+.user_exp-title {
 	font-size: 28px;
 	font-weight: bold;
 	margin-top: 25px;
@@ -173,19 +181,19 @@ des marges difficiles */
 	width: 50%;
 }
 
-.user_exp_info {
+.user_exp-info {
 	font-style: italic;
 	font-size: 20px;
 	margin-top: 15px;
 	margin-bottom: 0;
 }
 
-.user_exp_description {
+.user_exp-description {
 	font-size: 19px;
-	margin-top: 11px;
-	margin-bottom: 45px;
+	margin-top: 13px;
+	margin-bottom: 43px;
 }
-	/* exp FIN */
+/* /User experiences, right content */
 
-/* main_box FIN */
+/* /Main content */
 
